@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" >
+
+    
+
+    <!-- Leaflet Routing Machine CSS -->
+    <link rel=stylesheet href=https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css/>
+
+    <!-- Leaflet Control Geocoder CSS -->
+    <link rel=stylesheet href=https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css/>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Leaflet Routing Machine JavaScript -->
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+
+    <!-- Leaflet Control Geocoder JavaScript -->
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+    <title>Contacto</title>
+</head>
+<body>
+
+    <!--cabecera-->
+    <header>
+        <a href="../index.html">
+            <img src="../images/SportumLogo.png" alt="logo">
+        </a>
+    </header>
+
+    <!--navegador-->
+    <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="galeria.html">Galería</a>
+        <a href="presupuesto.html">Presupuesto</a>
+        <div class="current">
+        <a href="contacto.html">Contacto</a>
+        </div>
+    </nav>
+
+    <!--mapa-->
+    <div id="map" style="height: 400px;"></div>
+
+    <!-- informacion contacto-->
+    <section id="contact-info">
+        <h2>Contacto</h2>
+        <p>Teléfono: +34 123 456 789</p>
+        <p>Email: contacto@deportium.com</p>
+        <p>Dirección: Calle Torneo, 9. Sevilla, España</p>
+    </section>
+
+    <!--formulario contacto-->
+    <section id="contact-form">
+        <h2>Envíanos un mensaje</h2>
+        <form id="routeForm" action="/submit_form" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="address">Dirección:</label>
+            <input type="text" id="address" name="address" required>
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <div class="icono-social">
+            Nuestras redes sociales:
+            <a href="https://www.facebook.com/?locale=es_ES" target="_blank"><img src="../images/icono_facebook.png" alt="Facebook" width="256" height="256"></a>
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fhome" target="_blank"><img src="../images/twitter.jpg" alt="Twitter" width="736" height="678"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../images/Instagram-Icon.png" alt="Instagram" width="800" height="800"></a>
+        </div>
+        <p>Calle Torneo, 9. Sevilla</p>
+        <p>&copy; 2007-2024 Deportium. Todos los derechos reservados.</p>
+    </footer>
+   
+    <script src="../js/contacto.js"></script>
+
+</body>
+</html>

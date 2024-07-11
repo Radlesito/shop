@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/galeria.css">
+    <title>Galeria</title>
+</head>
+<body>
+    <!--cabecera-->
+    <header>
+        <a href="../index.html">
+            <img src="../images/SportumLogo.png" alt="logo">
+        </a>
+    </header>
+
+    <!--navegador-->
+    <nav>
+        <a href="../index.html">Inicio</a>
+        <div class="current">
+            <a href="galeria.html">Galería</a>
+        </div>
+        <a href="presupuesto.html">Presupuesto</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <!--galeria-->
+    <div class="ful-img" id="fulImgBox">
+        <img src="/images/bateNike.jpg" id="fulImg" alt="">
+        <span onclick="closeImg()">X</span>
+    </div>
+
+    <h2 class="gal-text"><span>Galería de Productos</span></h2>
+    <div class="img-gallery">
+        <img src="../images/bateNike.jpg" onclick="openFullImg(this.src)" alt="bateNike" width="576" height="576">
+        <img src="../images/botasAdidas.jpg" onclick="openFullImg(this.src)" alt="botasAdidas" width="600" height="600">
+        <img src="../images/mesaBillar.jpg" onclick="openFullImg(this.src)" alt="mesaBillar" width="800" height="800">
+        <img src="../images/pelotaNike.jpg" onclick="openFullImg(this.src)" alt="pelotaNike" width="1500" height="1500">
+        <img src="../images/pelotaWilson.jpg" onclick="openFullImg(this.src)" alt="pelotaWilson" width="488" height="488">
+        <img src="../images/raquetaPadel.jpg" onclick="openFullImg(this.src)" alt="raquetaPadel" width="1920" height="1920">
+        <img src="../images/tacoBillar.jpg" onclick="openFullImg(this.src)" alt="tacoBillar" width="1000" height="1000">
+        <img src="../images/tenisWilson.jpg" onclick="openFullImg(this.src)" alt="tenisWilson" width="1200" height="1200">
+    </div>
+
+    <!--footer-->
+    <footer>
+        <div class="icono-social">
+            Nuestras redes sociales:
+            <a href="https://www.facebook.com/?locale=es_ES" target="_blank"><img src="../images/icono_facebook.png" alt="Facebook" width="256" height="256"></a>
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fhome" target="_blank"><img src="../images/twitter.jpg" alt="Twitter" width="736" height="678"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../images/Instagram-Icon.png" alt="Instagram" width="800" height="800"></a>
+        </div>
+        <p>Calle Torneo, 9. Sevilla</p>
+        <p>&copy; 2007-2024 Deportium. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/galeria.js"></script>
+
+</body>
+</html>

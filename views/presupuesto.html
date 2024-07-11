@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/presupuesto.css">
+    <title>Presupuesto</title>
+</head>
+<body>
+
+    <!--cabecera-->
+    <header>
+        <a href="../index.html">
+            <img src="../images/SportumLogo.png" alt="logo">
+        </a>
+    </header>
+
+    <!--navegador-->
+    <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="galeria.html">Galería</a>
+        <div class="current">
+            <a href="presupuesto.html">Presupuesto</a>
+        </div>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <!--datos de contacto-->
+	<h2>Formulario de Presupuesto</h2>
+    <form id="formularioPresupuesto">
+        <h3>Datos de Contacto</h3>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" maxlength="15" required><br><br>
+        
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" maxlength="40" required><br><br>
+        
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" maxlength="9" required><br><br>
+        
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <h3>Presupuesto</h3>
+        <label for="producto">Producto:</label>
+        <select id="producto" name="producto">
+        <option value="70">Bate Nike - 70€</option>
+        <option value="60">Botas Adidas - 60€</option>
+        <option value="1200">Mesa de Billar - 1200€</option>
+        <option value="30">Pelota Nike - 30€</option>
+        <option value="30">Pelota Wilson - 30€</option>
+        <option value="60">Raqueta de Padel - 60€</option>
+        <option value="70">Taco de Billar - 70€</option>
+        <option value="130">Mesa de Billar - 130€</option>
+        </select><br><br>
+        
+        <label for="plazo">Plazo (días):</label>
+        <input type="number" id="plazo" name="plazo" min="1" max="5" value="1"><br><br>
+        
+        <label>Extras:</label><br>
+        <input type="checkbox" id="extra1" name="extras" value="50"> Kit de Principiante - 50€<br>
+        <input type="checkbox" id="extra2" name="extras" value="100"> Kit Amateur - 100€<br>
+        <input type="checkbox" id="extra3" name="extras" value="300"> Kit Profesional - 300€<br><br>
+        
+        <label for="presupuestoFinal">Presupuesto Final:</label>
+        <output id="presupuestoFinal">0€</output><br><br>
+
+        <input type="checkbox" id="condiciones" required>
+        <label for="condiciones">Acepto las condiciones de privacidad.</label><br><br>
+
+        <button type="button" onclick="calcularPresupuesto()">Calcular Presupuesto</button>
+        <button type="button" onclick="resetearFormulario()">Resetear Formulario</button>
+        <button type="submit" onclick="enviarPresupuesto()">Enviar Presupuesto</button>
+    </form>
+
+    <!--footer-->
+    <footer>
+        <div class="icono-social">
+            Nuestras redes sociales:
+            <a href="https://www.facebook.com/?locale=es_ES" target="_blank"><img src="../images/icono_facebook.png" alt="Facebook" width="256" height="256"></a>
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fhome" target="_blank"><img src="../images/twitter.jpg" alt="Twitter" width="736" height="678"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../images/Instagram-Icon.png" alt="Instagram" width="800" height="800"></a>
+        </div>
+        <p>Calle Torneo, 9. Sevilla</p>
+        <p>&copy; 2007-2024 Deportium. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/presupuesto.js"></script>
+
+</body>
+</html>
